@@ -34,6 +34,11 @@ app.get('/notifications/google1a3c5768b5a8f586.html',function(req,res) {
   res.sendFile(path.join(__dirname+'/google1a3c5768b5a8f586.html'));
 });
 
+//assuming app is express Object.
+app.get('/google1a3c5768b5a8f586.html',function(req,res) {
+  res.sendFile(path.join(__dirname+'/google1a3c5768b5a8f586.html'));
+});
+
 const port = process.env.PORT || 9009
 const portSSL = process.env.PORT_SSL || 9008
 
